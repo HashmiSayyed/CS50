@@ -1,0 +1,46 @@
+._____________________________________________________________________________________________________.
+| time ./sort1 sorted5000.txt:    | time ./sort2 sorted5000.txt:    | time ./sort3 sorted5000.txt:    |
+| real    0m0.033s                | real    0m0.035s                | real    0m0.047s                |
+| user    0m0.012s                | user    0m0.000s                | user    0m0.034s                |
+| sys     0m0.009s                | sys     0m0.018s                | sys     0m0.013s                |
+|                                 |                                 |                                 |
+| time ./sort1 sorted10000.txt:   | time ./sort2 sorted10000.txt:   | time ./sort3 sorted10000.txt:   |
+| real    0m0.071s                | real    0m0.051s                | real    0m0.157s                |
+| user    0m0.000s                | user    0m0.012s                | user    0m0.103s                |
+| sys     0m0.041s                | sys     0m0.028s                | sys     0m0.032s                |
+|                                 |                                 |                                 |
+| time ./sort1 sorted50000.txt:   | time ./sort2 sorted50000.txt:   | time ./sort3 sorted50000.txt:   |
+| real    0m0.793s                | real    0m1.331s                | real    0m3.804s                |
+| user    0m0.037s                | user    0m0.039s                | user    0m2.651s                |
+| sys     0m0.146s                | sys     0m0.156s                | sys     0m0.192s                |
+|---------------------------------|---------------------------------|---------------------------------|
+| time ./sort1 random5000.txt:    | time ./sort2 random5000.txt:    | time ./sort3 random5000.txt:    |
+| real    0m0.078s                | real    0m0.027s                | real    0m0.047s                |
+| user    0m0.058s                | user    0m0.000s                | user    0m0.029s                |
+| sys     0m0.016s                | sys     0m0.022s                | sys     0m0.017s                |
+|                                 |                                 |                                 |
+| time ./sort1 random10000.txt:   | time ./sort2 random10000.txt:   | time ./sort3 random10000.txt:   |
+| real    0m0.318s                | real    0m0.067s                | real    0m0.155s                |
+| user    0m0.233s                | user    0m0.011s                | user    0m0.108s                |
+| sys     0m0.043s                | sys     0m0.033s                | sys     0m0.029s                |
+|                                 |                                 |                                 |
+| time ./sort1 random50000.txt:   | time ./sort2 random50000.txt:   | time ./sort3 random50000.txt:   |
+| real    0m8.196s                | real    0m1.067s                | real    0m4.234s                |
+| user    0m6.781s                | user    0m0.030s                | user    0m2.678s                |
+| sys     0m0.194s                | sys     0m0.191s                | sys     0m0.164s                |
+|---------------------------------|---------------------------------|---------------------------------|
+| time ./sort1 reversed5000.txt:  | time ./sort2 reversed5000.txt:  | time ./sort3 reversed5000.txt:  |
+| real    0m0.088s                | real    0m0.029s                | real    0m0.050s                |
+| user    0m0.059s                | user    0m0.000s                | user    0m0.030s                |
+| sys     0m0.012s                | sys     0m0.022s                | sys     0m0.016s                |
+|                                 |                                 |                                 |
+| time ./sort1 reversed10000.txt: | time ./sort2 reversed10000.txt: | time ./sort3 reversed10000.txt: |
+| real    0m0.268s                | real    0m0.065s                | real    0m0.185s                |
+| user    0m0.188s                | user    0m0.000s                | user    0m0.108s                |
+| sys     0m0.044s                | sys     0m0.043s                | sys     0m0.041s                |
+|                                 |                                 |                                 |
+| time ./sort1 reversed50000.txt: | time ./sort2 reversed50000.txt: | time ./sort3 reversed50000.txt: |
+| real    0m6.014s                | real    0m1.024s                | real    0m4.012s                |
+| user    0m4.859s                | user    0m0.028s                | user    0m2.686s                |
+| sys     0m0.168s                | sys     0m0.194s                | sys     0m0.189s                |
+|_________________________________|_________________________________|_________________________________|

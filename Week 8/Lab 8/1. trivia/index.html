@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function mcq (evnt){
+                let txt;
+                if (evnt.className == "trd"){
+                    evnt.classList.add("mcq-correct");
+                    txt = "Correct";
+                } else {
+                    evnt.classList.add("mcq-incorrect");
+                    txt = "Incorrect";
+                }
+                document.querySelector(".mcq-hidden-text").innerHTML = txt;
+            }
+
+            function fr (element){
+                let ans = element.value.toLowerCase();
+                let correct_ans = "tolowercase";
+                if (ans == correct_ans){
+                    element.classList.remove("fr-incorrect");
+                    element.classList.add("fr-correct");
+                    document.querySelector(".fr-hidden-text").innerHTML = "Correct";
+                } else{
+                    element.classList.remove("fr-correct");
+                    element.classList.add("fr-incorrect");
+                    document.querySelector(".fr-hidden-text").innerHTML = "Incorrect";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What does HTML stand for?</h3>
+                <h3 class="mcq-hidden-text"></h3>
+                <button class="fst" onclick="mcq(this)">Hyperlink and Text Markup Language</button>
+                <button class="snd" onclick="mcq(this)">Home Tool Markup Language</button>
+                <button class="trd" onclick="mcq(this)">Hyper Text Markup Language</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In JavaScript what is the method for lower casing given text?</h3>
+                <h3 class="fr-hidden-text"></h3>
+                <input type="text" class="fr-t" placeholder="Type your answer without parenthesis">
+                <button class="fr-b" onclick="fr(document.querySelector('.fr-t'))">Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

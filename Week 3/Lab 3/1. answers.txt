@@ -1,0 +1,14 @@
+sort1 uses: Bubble sort
+
+How do you know?: Bubble sort have O(n²) and Ω(n). and sort1 have biggest time difference when sorting sorted numbers and
+                  sorting reversed numbers.
+
+sort2 uses: Merge sort
+
+How do you know?: Both merge sort and selection sort have O equal Ω. but merge sort is faster then selection sort. sort2 is
+                  faster then sort3 so i know sort2 is merge sort.
+
+sort3 uses: Selection sort
+
+How do you know?: Both merge sort and selection sort have O equal Ω. but merge sort is faster then selection sort. sort3 is
+                  slower then sort2 so i know sort3 is selection sort.
